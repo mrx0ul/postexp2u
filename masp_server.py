@@ -254,7 +254,7 @@ def banner(con):
 
 def exploit_menu(con):
 	con.sendall((BOLD + CYAN).encode())
-	exploit_menu = b'\nExploit Menu\n1. Spam File\n2. Plant Fork Bomb\n3. Shut Down System\n4. Kill Process\n5. Disable Networking\n6. Delete User Files\n7. Drop Reverse Shell9. Return to Main Menu'
+	exploit_menu = b'\nExploit Menu\n1. Spam File\n2. Plant Fork Bomb\n3. Shut Down System\n4. Kill Process\n5. Disable Networking\n6. Delete User Files\n7. Drop Reverse Shell\n8. Plant Backdoor\n9. Return to Main Menu'
 	con.sendall(exploit_menu)
 	con.sendall(b'\nYour Selection: ')
 	choice = con.recv(1024)
