@@ -115,7 +115,7 @@ def enum_proc_app(con):
 
 	proc_app = {
 		"USEFUL BINARIES":{"cmd":"which nmap aws nc ncat netcat nc.traditional wget curl ping gcc g++ make gdb base64 socat python python2 python3 python2.7 python2.6 python3.6 python3.7 perl php ruby xterm doas sudo fetch docker lxc ctr runc rkt kubectl 2>/dev/null", "msg":"Useful Binaries in the System","results":results},
-		"COMPILERS":{"cmd":"dpkg --list 2>/dev/null")","msg":"Installed Compilers","results":results},
+		"COMPILERS":{"cmd":"dpkg --list 2>/dev/null","msg":"Installed Compilers","results":results},
 		"ALL PACKAGES":{"cmd":get_packagemng, "msg":"Installed Packages", "results": results}
 	}
 
